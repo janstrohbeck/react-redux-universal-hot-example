@@ -1,3 +1,5 @@
+This is a fork of the excellent repository [bertho-zero/react-redux-universal-hot-example](https://github.com/bertho-zero/react-redux-universal-hot-example), but almost everything was ported to Typescript, while retaining all the awesome features like Universal Rendering, Hot Reloading, Code Splitting and so on (see below).
+
 # React Redux Universal Hot Example
 
 [![Build Status](https://travis-ci.org/bertho-zero/react-redux-universal-hot-example.svg?branch=master&style=flat-square)](https://travis-ci.org/bertho-zero/react-redux-universal-hot-example)
