@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "typeRoots" : ["./typings", "./node_modules/@types"],
+        "module": "commonjs",
+        "target": "ES6",
+        "jsx": "react"
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./api/**/*.ts",
+        "./bin/*.ts",
+        "./webpack/*.ts"
+    ]
+}

@@ -1,0 +1,11 @@
+// export { default as About } from './About/About';
+export { default as App } from './App/App';
+// export { default as Chat } from './Chat/Chat';
+// export { default as ChatFeathers } from './ChatFeathers/ChatFeathers';
+export { default as Home } from './Home/Home';
+// export { default as Login } from './Login/Login';
+// export { default as LoginSuccess } from './LoginSuccess/LoginSuccess';
+export { default as NotFound } from './NotFound/NotFound';
+// export {default as Register } from './Register/Register';
+// export {default as Survey } from './Survey/Survey';
+// export {default as Widgets } from './Widgets/Widgets';

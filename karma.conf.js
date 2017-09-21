@@ -38,18 +38,19 @@ module.exports = function (config) {
       module: {
         rules: [
           { test: /\.(jpe?g|png|gif|svg)$/, loader: 'url', options: { limit: 10240 } },
-          { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+          { test: /\.tsx?$/, exclude: /node_modules/, loader: 'awesome-typescript-loader', options: { useBabel: true, useCache: false } },
           {
             test: /\.less$/,
-            loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss-loader!less-loader?outputStyle=expanded&sourceMap'
+            loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss-loader?sourceMap!less-loader?outputStyle=expanded&sourceMap'
           },
           {
             test: /\.scss$/,
-            loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss-loader!sass-loader?outputStyle=expanded&sourceMap'
+            loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss-loader?sourceMap!sass-loader?outputStyle=expanded&sourceMap'
           }
         ]
       },
       resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
         modules: [
           'src',
           'node_modules'

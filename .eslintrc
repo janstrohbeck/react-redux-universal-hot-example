@@ -29,7 +29,13 @@
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-named-as-default": "error",
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "no-useless-constructor": "off",
+    "space-infix-ops": "off",
+    "react/jsx-indent": "off"
   },
   "plugins": [
     "react",
@@ -44,9 +50,13 @@
       ]
     }
   },
-  "parser": "babel-eslint",
+  "parser": "typescript-eslint-parser",
   "parserOptions": {
-    "sourceType": "module"
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "globals": {
     "__DEVELOPMENT__": true,
